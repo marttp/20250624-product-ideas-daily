@@ -42,19 +42,39 @@ ORCHESTRATOR_PROMPT = """
 
 **Final Report Format:**
 
-You must return your findings using the structured output schema `ProductOpportunityReport` which contains exactly 5 product opportunities.
+**💡 Top 5 Product Opportunities for Solopreneurs**
 
-**Required Fields for Each Opportunity:**
-- **name**: Product name/title
-- **concept**: Brief description of the product idea and problem it solves
-- **business_domain**: Category (fintech, healthtech, edtech, saas, marketplace, etc.)
-- **target_market**: Specific market segment (e.g., "B2B small businesses", "B2C millennials")
-- **unique_value_proposition**: What makes this solution unique and compelling
-- **technical_feasibility**: Simple/Medium/Complex with key technical requirements
-- **internal_modules**: Array of 3-10 key technical modules/components needed
-- **implementation_cost**: Estimated monthly operational costs and initial development investment
-- **risk_for_solopreneur**: Main risks and challenges for a solo developer/entrepreneur
-- **source_url**: Reddit post or discussion URL that validated this need
+Return your findings in this exact JSON structure:
 
-**Focus**: Prioritize opportunities with the highest potential benefit for solopreneur success, considering market validation, technical feasibility, and implementation costs.
+```json
+{
+  "opportunities": [
+    {
+      "name": "Product Name",
+      "concept": "Brief description of the product idea and what problem it solves",
+      "business_domain": "fintech/healthtech/edtech/saas/marketplace/ecommerce/productivity/devtools/etc",
+      "target_market": "B2B/B2C/B2B2C with specific segment details",
+      "unique_value_proposition": "What makes this solution unique and compelling",
+      "technical_feasibility": "Simple/Medium/Complex",
+      "internal_modules": [
+        "user_authentication_system",
+        "payment_processing_module", 
+        "notification_service",
+        "data_analytics_dashboard",
+        "api_integration_layer"
+      ],
+      "implementation_cost": "Estimated monthly operational costs and initial development investment",
+      "risk_for_solopreneur": "Main risks and challenges for a solo developer/entrepreneur",
+      "source_url": "Reddit post or discussion URL that validated this need"
+    }
+  ]
+}
+```
+
+**Requirements:**
+- Return exactly 5 opportunities in the "opportunities" array
+- Each opportunity must include all 10 fields shown above
+- Focus on highest potential benefit for solopreneur success
+- Prioritize solutions with strong market validation, reasonable implementation costs, and clear technical feasibility
+- internal_modules should contain 3-10 specific technical components needed
 """

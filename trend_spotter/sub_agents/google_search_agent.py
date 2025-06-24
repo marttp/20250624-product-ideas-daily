@@ -27,5 +27,5 @@ google_search_agent = Agent(
     name="google_search_agent",
     description="An expert at using google_search to find recent information and return a structured list of results including URLs.",
     instruction=google_search_sub_agent_prompt,
-    tools=[google_search]
+    tools=[google_search],
 )

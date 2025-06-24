@@ -43,6 +43,19 @@ REDDIT_USER_AGENT=your_reddit_user_agent
 adk web
 ```
 
+## Example Output
+
+The application analyzes Reddit posts and generates structured product opportunity reports:
+
+![Example Result](images/example-result.png)
+
+The AI orchestrator coordinates multiple specialist agents to:
+1. **Reddit Agent**: Scans subreddits for consumer pain points and discussions
+2. **Google Search Agent**: Researches pricing for cloud services and technical components  
+3. **Solution Architect Agent**: Evaluates technical feasibility and implementation costs
+
+The final output provides the top 5 product opportunities with market validation, technical analysis, and cost breakdowns.
+
 ## Dependencies
 
 - `google-adk`: Agent Development Kit

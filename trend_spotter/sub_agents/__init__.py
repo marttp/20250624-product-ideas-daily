@@ -1,1 +1,1 @@
-from . import google_search_agent, reddit_agent, product_manager_agent, solution_architect_agent
+from . import google_search_agent, reddit_agent, workshop_group

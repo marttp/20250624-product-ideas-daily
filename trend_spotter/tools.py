@@ -1,6 +1,6 @@
-import os
 import praw
 from datetime import datetime, timedelta
+from trend_spotter.config import REDDIT_CLIENT_ID, REDDIT_CLIENT_SECRET, REDDIT_USER_AGENT
 
 def search_yesterday_reddit_posts(subreddit_names: list[str], limit_per_subreddit: int = 5) -> str:
     """
@@ -17,9 +17,9 @@ def search_yesterday_reddit_posts(subreddit_names: list[str], limit_per_subreddi
         print(f"\n🔎 Searching Reddit for yesterday's posts in: {', '.join(subreddit_names)}...")
         
         reddit = praw.Reddit(
-            client_id=os.getenv("REDDIT_CLIENT_ID"),
-            client_secret=os.getenv("REDDIT_CLIENT_SECRET"),
-            user_agent=os.getenv("REDDIT_USER_AGENT"),
+            client_id=REDDIT_CLIENT_ID,
+            client_secret=REDDIT_CLIENT_SECRET,
+            user_agent=REDDIT_USER_AGENT,
             read_only=True,
         )
         

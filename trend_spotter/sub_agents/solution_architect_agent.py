@@ -1,5 +1,7 @@
 from google.adk.agents import Agent
 from trend_spotter.config import MODEL
+from google.adk.tools.agent_tool import AgentTool
+from trend_spotter.sub_agents.google_search_agent import google_search_agent
 
 solution_architect_sub_agent_prompt = """
 **Role:**
@@ -64,4 +66,5 @@ solution_architect_agent = Agent(
     name="solution_architect_agent",
     description="A cloud solution architecture specialist in startup or bootstrap company.",
     instruction=solution_architect_sub_agent_prompt,
+    tools=[AgentTool(agent=google_search_agent)],
 )

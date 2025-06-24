@@ -1,5 +1,7 @@
 from google.adk.agents import Agent
 from trend_spotter.config import MODEL
+from google.adk.tools.agent_tool import AgentTool
+from trend_spotter.sub_agents.google_search_agent import google_search_agent
 
 product_manager_sub_agent_prompt = """
 **Role:**
@@ -65,4 +67,5 @@ product_manager_agent = Agent(
     name="product_manager_agent",
     description="A product manager in startup or bootstrap company.",
     instruction=product_manager_sub_agent_prompt,
+    tools=[AgentTool(agent=google_search_agent)],
 )

@@ -39,11 +39,8 @@ REDDIT_USER_AGENT=your_reddit_user_agent
 
 ## Usage
 
-```python
-from trend_spotter import root_agent
-
-# The orchestrator will automatically delegate to specialized agents
-# to find and analyze Reddit trends
+```bash
+adk web
 ```
 
 ## Dependencies

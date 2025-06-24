@@ -45,5 +45,5 @@ adk web
 
 ## Dependencies
 
-- `google-adk`: Google AI Development Kit for agent orchestration
-- `praw`: Python Reddit API Wrapper for Reddit data access
+- `google-adk`: Agent Development Kit
+- `praw`: Python Reddit API Wrapper

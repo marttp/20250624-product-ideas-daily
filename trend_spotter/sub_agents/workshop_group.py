@@ -232,6 +232,6 @@ reporter_agent = Agent(
     name="reporter_agent",
     description="A business reporter who synthesizes shared state data into final JSON product opportunity reports.",
     instruction=reporter_agent_prompt,
-    tools=[],
+    tools=[append_to_state],
 )
 

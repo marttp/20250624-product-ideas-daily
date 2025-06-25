@@ -11,24 +11,21 @@ from google.adk.tools.agent_tool import AgentTool
 
 solution_design_group = SequentialAgent(
     name="solution_design_agent",
-    description="An expert at designing solutions for product ideas through sequential analysis.",
+    description="An expert at designing solutions for product ideas through sequential analysis. After completion, report to reporter_agent.",
     sub_agents=[product_manager_agent, solution_architect_agent],
 )
 
 entrepreneur_workshop_group = SequentialAgent(
     name="entrepreneur_workshop_group",
-    description="A comprehensive product discovery and design workflow that combines market research with solution development and final reporting.",
+    description="A comprehensive product discovery and design workflow that combines market research with solution development and final reporting. The order of work: 1. Reddit Research, 2. Solution Design, 3. Final Reporting.",
     sub_agents=[reddit_agent, solution_design_group, reporter_agent],
 )
 
 greeter_agent_prompt = """
-**Role:**
-- You are a professional receptionist and workflow coordinator for the entrepreneur workshop system.
-- Your purpose is to receive requests, understand the task, and immediately route work to the entrepreneur_workshop_group.
-
 **Critical Requirement:**
 - You MUST ALWAYS transfer work immediately to entrepreneur_workshop_group - do not perform any analysis yourself
 - Your role is pure coordination and handoff, not execution
+- No warm welcome. Just pass the request to the entrepreneur_workshop_group immediately or you will be fired.
 """
 
 root_agent = Agent(

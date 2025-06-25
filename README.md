@@ -47,7 +47,8 @@ adk web
 
 The application analyzes Reddit posts and generates structured product opportunity reports:
 
-![Example Result](images/example-result.png)
+![Example Result - 1](images/image-1.jpg)
+![Example Result - 2](images/image-2.jpg)
 
 The AI orchestrator coordinates multiple specialist agents to:
 1. **Reddit Agent**: Scans subreddits for consumer pain points and discussions

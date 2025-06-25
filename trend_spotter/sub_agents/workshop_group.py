@@ -16,6 +16,8 @@ solution_architect_sub_agent_prompt = """
 **Critical Requirement:**
 - You MUST ALWAYS use the google_search_agent to get the latest pricing information for any cloud services, APIs, or third-party tools before making cost estimates.
 - Never rely on outdated or assumed pricing - always fetch current rates first.
+- PROVIDE SPECIFIC NUMBERS: Replace all placeholder values with actual pricing figures in both USD and THB.
+- The reporter_agent depends on your detailed cost breakdown with real numbers for final report generation.
 
 **Tasks:**
 1. **Review Product Requirements:**
@@ -35,8 +37,11 @@ solution_architect_sub_agent_prompt = """
 
 4. **Cost Estimation:**
    - Calculate back-of-the-envelope costs based on LATEST pricing from google_search_agent
+   - Provide SPECIFIC NUMBERS in both USD and THB (use 1 USD = 36 THB conversion rate)
+   - Break down costs by service category with actual pricing numbers
    - Consider startup/bootstrap budget constraints (aim for <$100-500/month initial costs)
    - Factor in scaling considerations and cost growth patterns
+   - ALWAYS include specific dollar amounts - never use placeholder "X" values
 
 5. **Store Technical Specifications:**
    - After completing analysis, use append_to_state to store your technical specifications
@@ -62,12 +67,20 @@ Create comprehensive technical specifications and store in shared state:
 - **System Architecture**: [High-level technical design]
 
 **Cost Analysis:**
-- **Development Phase**: [One-time setup costs]
-- **Monthly Operating Costs**: 
-  - Infrastructure: $X/month
-  - Third-party services: $X/month
-  - Total: $X/month
-- **Scaling Projections**: [Costs at 10x, 100x users]
+- **Development Phase**: [One-time setup costs in USD and THB]
+- **Monthly Operating Costs Breakdown**: 
+  - Infrastructure (AWS/GCP/Azure): $X/month (THB X/month)
+  - Database (PostgreSQL/MongoDB): $X/month (THB X/month)
+  - CDN/Static hosting (Cloudflare): $X/month (THB X/month)
+  - Authentication service: $X/month (THB X/month)
+  - Payment processing: $X/month (THB X/month)
+  - Email/SMS service: $X/month (THB X/month)
+  - Analytics/monitoring: $X/month (THB X/month)
+  - **Total Monthly Cost**: $X/month (THB X/month)
+- **Scaling Projections**: 
+  - At 1K users: $X/month (THB X/month)
+  - At 10K users: $X/month (THB X/month)
+  - At 100K users: $X/month (THB X/month)
 
 **Implementation Roadmap:**
 - **MVP Approach**: [How to start lean]
@@ -174,6 +187,7 @@ reporter_agent_prompt = """
 
 **Critical Task:**
 Review all shared state data and synthesize it into the exact JSON format requested by the orchestrator.
+Number must be state clearly in report even it's approximate.
 
 **Analysis Process:**
 1. **Data Review:**
@@ -211,7 +225,13 @@ Return ONLY the JSON structure as specified in the orchestrator prompt:
         "data_analytics_dashboard",
         "api_integration_layer"
       ],
-      "implementation_cost": "Estimated monthly operational costs and initial development investment",
+      "implementation_cost": [
+         "Operation cost: xxxx THB/month or $xxx/month",
+         "Cloudflare worker cost: xxxx THB/month or $xxx/month",
+         "service A: xxxx THB/month or $xxx/month",
+         "service B: xxxx THB/month or $xxx/month",
+         "service C: xxxx THB/month or $xxx/month",
+      ],
       "risk_for_solopreneur": "Main risks and challenges for a solo developer/entrepreneur",
       "source_url": "Reddit post or discussion URL that validated this need"
     }

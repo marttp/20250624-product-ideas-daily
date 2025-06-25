@@ -3,6 +3,19 @@ from trend_spotter.config import MODEL
 from google.adk.tools.agent_tool import AgentTool
 from trend_spotter.sub_agents.google_search_agent import google_search_agent
 from trend_spotter.tools import append_to_state
+from google.genai import types
+
+safety_settings = [
+    types.SafetySetting(
+        category=types.HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT,
+        threshold=types.HarmBlockThreshold.OFF,
+    ),
+]
+
+generate_content_config = types.GenerateContentConfig(
+   safety_settings=safety_settings,
+   max_output_tokens=2000,
+)
 
 solution_architect_sub_agent_prompt = """
 **Role:**
@@ -164,6 +177,7 @@ product_manager_agent = Agent(
     description="A product manager who analyzes Reddit research data and creates PRDs stored in shared state.",
     instruction=product_manager_sub_agent_prompt,
     tools=[AgentTool(agent=google_search_agent), append_to_state],
+    generate_content_config=generate_content_config,
 )
 
 solution_architect_agent = Agent(
@@ -172,6 +186,7 @@ solution_architect_agent = Agent(
     description="A solution architect who analyzes PRDs from shared state and creates technical specifications.",
     instruction=solution_architect_sub_agent_prompt,
     tools=[AgentTool(agent=google_search_agent), append_to_state],
+    generate_content_config=generate_content_config,
 )
 
 reporter_agent_prompt = """

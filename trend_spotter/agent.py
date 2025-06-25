@@ -33,5 +33,5 @@ root_agent = Agent(
     name="greeter_agent",
     description="A receptionist who receives requests and routes them to the entrepreneur workshop group.",
     instruction=greeter_agent_prompt,
-    tools=[AgentTool(agent=entrepreneur_workshop_group)],
+    sub_agents=[entrepreneur_workshop_group],
 )

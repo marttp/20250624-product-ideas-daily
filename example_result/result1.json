@@ -35,14 +35,6 @@
           "applicant_data_storage",
           "screening_workflow_ui",
           "api_integration_layer"
-        reliant_modules": [
-          "user_authentication_system",
-          "document_upload_parser",
-          "ai_detection_module",
-          "keyword_extraction_module",
-          "applicant_data_storage",
-          "screening_workflow_ui",
-          "api_integration_layer"
         ],
         "implementation_cost": "Low initial operational cost using serverless and potential AI API free tiers. Medium development investment.",
         "risk_for_solopreneur": "Accuracy of AI detection models, need to handle various document formats reliably, legal compliance around screening processes.",

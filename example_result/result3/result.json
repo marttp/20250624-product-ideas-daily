@@ -1,98 +1,98 @@
 {
-    "opportunities": [
-      {
-        "name": "IdeaFlow Hub",
-        "concept": "A web application designed for solopreneurs and early-stage founders to capture, organize, tag, and connect business ideas effectively, preventing overwhelm and facilitating focused development.",
-        "business_domain": "productivity/saas",
-        "target_market": "B2C - Solopreneurs, early-stage startup founders, freelancers, aspiring entrepreneurs.",
-        "unique_value_proposition": "Provides a structured yet flexible system specifically tailored for solo creators to manage diverse business ideas, moving beyond generic note-taking apps.",
-        "technical_feasibility": "Simple to Medium",
-        "internal_modules": [
-          "User Authentication & Authorization Module",
-          "User Data Management Module",
-          "Idea Management Module",
-          "Content & Resource Module"
-        ],
-        "implementation_cost": [
-           "Operation cost: ~0 THB/month or ~$0/month (using free tiers of BaaS and hosting)"
-        ],
-        "risk_for_solopreneur": "Balancing development with marketing and user acquisition. Standing out against general productivity tools.",
-        "source_url": "https://www.reddit.com/r/startups/comments/1limfvb/how_do_you_all_consolidate_your_ideas_need_some/"
-      },
-      {
-        "name": "Founder Focus Toolkit",
-        "concept": "A productivity tool combining time blocking features with structured meeting note-taking and action item tracking to help founders balance multiple commitments and improve meeting efficiency.",
-        "business_domain": "productivity/saas",
-        "target_market": "B2C - Solopreneurs, startup founders balancing jobs, small business owners.",
-        "unique_value_proposition": "Specifically addresses the time management and meeting fatigue challenges faced by busy founders, offering integrated tools for better control over their day and collaborations.",
-        "technical_feasibility": "Medium",
-        "internal_modules": [
-          "User Authentication & Authorization Module",
-          "User Data Management Module",
-          "Productivity & Meeting Module",
-          "Email & Notification Module"
-        ],
-        "implementation_cost": [
-           "Operation cost: ~0 THB/month or ~$0/month (using free tiers, potential ~$15/month for email service if high notification volume)"
-        ],
-        "risk_for_solopreneur": "Technical complexity of time/calendar logic and potential integrations. Requires effective marketing to reach busy founders.",
-        "source_url": "https://www.reddit.com/r/business/comments/1livuqa/i_cant_pay_attention_in_meetings/, https://www.reddit.com/r/startups/comments/1ljctx7/balancing_a_full_time_job_while_building_a/"
-      },
-      {
-        "name": "Bootstrap Finance Navigator",
-        "concept": "A web-based tool providing calculators for equity splits and sweat equity valuation, along with templates and guides for structuring fundraising asks and strategies for getting warm introductions.",
-        "business_domain": "fintech/saas",
-        "target_market": "B2C/B2B - Early-stage startup founders, bootstrapped small business owners seeking funding or structuring teams.",
-        "unique_value_proposition": "Simplifies complex early-stage financial decisions like equity and fundraising, offering clear tools and actionable guidance specifically for resource-constrained ventures.",
-        "technical_feasibility": "Medium",
-        "internal_modules": [
-          "User Authentication & Authorization Module",
-          "User Data Management Module",
-          "Financial Modeling & Equity Module",
-          "Content & Resource Module"
-        ],
-        "implementation_cost": [
-           "Operation cost: ~0 THB/month or ~$0/month (using free tiers of BaaS and hosting)"
-        ],
-        "risk_for_solopreneur": "Ensuring accuracy of financial calculations. Handling sensitive user financial data securely. Requires expertise in startup finance.",
-        "source_url": "https://www.reddit.com/r/startups/comments/1lixrfn/is_it_appropriate_to_ask_for_equity_when_joining/, https://www.reddit.com/r/startups/comments/1ljcakz/my_startup_is_strapped_for_cash_should_i_consider/, https://www.reddit.com/r/startups/comments/1lj0u62/tips_on_getting_warm_intros_while_fundraising_i/"
-      },
-      {
-        "name": "Lean Hiring Blueprint",
-        "concept": "An interactive guide and template library focused on helping startups and small businesses define their essential 'hiring stack' and build a simple, effective, and affordable hiring process.",
-        "business_domain": "saas/hrtech",
-        "target_market": "B2B - Early-stage startup founders, small business owners facing hiring challenges.",
-        "unique_value_proposition": "Provides a practical, step-by-step approach and curated tools for building a hiring process tailored to the limited resources and specific needs of startups.",
-        "technical_feasibility": "Simple to Medium",
-        "internal_modules": [
-          "User Authentication & Authorization Module",
-          "User Data Management Module",
-          "Hiring & Team Module",
-          "Content & Resource Module"
-        ],
-        "implementation_cost": [
-           "Operation cost: ~0 THB/month or ~$0/month (using free tiers of BaaS and hosting)"
-        ],
-        "risk_for_solopreneur": "Requires deep understanding of startup hiring processes. Content needs to be high quality and trustworthy. Marketing to a niche audience.",
-        "source_url": "https://www.reddit.com/r/startups/comments/1lit0o8/whats_your_hiring_stack_look_like_i_will_not/"
-      },
-      {
-        "name": "Automation Opportunity Finder",
-        "concept": "A resource hub and assessment tool to help business owners identify areas in their operations ripe for automation and discover relevant no-code/low-code tools or strategies.",
-        "business_domain": "productivity/saas",
-        "target_market": "B2B - Small business owners, solopreneurs looking to improve efficiency.",
-        "unique_value_proposition": "Guides non-technical founders through the process of identifying automation opportunities that yield fast payoffs, linking them to practical tools and methods.",
-        "technical_feasibility": "Simple",
-        "internal_modules": [
-          "Content & Resource Module",
-          "AI Insights Module",
-          "User Data Management Module"
-        ],
-        "implementation_cost": [
-           "Operation cost: ~0 THB/month or ~$0/month (using free tiers of hosting and potentially BaaS for saving tools)"
-        ],
-        "risk_for_solopreneur": "Content needs constant updating as automation tools evolve. Requires understanding of various business processes. Marketing to a broad small business audience.",
-        "source_url": "https://www.reddit.com/r/business/comments/1lipm7d/whats_one_thing_you_automated_in_your_business_that_paid_off_fast/"
-      }
-    ]
-  }
+  "opportunities": [
+    {
+      "name": "IdeaFlow Hub",
+      "concept": "A web application designed for solopreneurs and early-stage founders to capture, organize, tag, and connect business ideas effectively, preventing overwhelm and facilitating focused development.",
+      "business_domain": "productivity/saas",
+      "target_market": "B2C - Solopreneurs, early-stage startup founders, freelancers, aspiring entrepreneurs.",
+      "unique_value_proposition": "Provides a structured yet flexible system specifically tailored for solo creators to manage diverse business ideas, moving beyond generic note-taking apps.",
+      "technical_feasibility": "Simple to Medium",
+      "internal_modules": [
+        "User Authentication & Authorization Module",
+        "User Data Management Module",
+        "Idea Management Module",
+        "Content & Resource Module"
+      ],
+      "implementation_cost": [
+        "Operation cost: ~0 THB/month or ~$0/month (using free tiers of BaaS and hosting)"
+      ],
+      "risk_for_solopreneur": "Balancing development with marketing and user acquisition. Standing out against general productivity tools.",
+      "source_url": "https://www.reddit.com/r/startups/comments/1limfvb/how_do_you_all_consolidate_your_ideas_need_some/"
+    },
+    {
+      "name": "Founder Focus Toolkit",
+      "concept": "A productivity tool combining time blocking features with structured meeting note-taking and action item tracking to help founders balance multiple commitments and improve meeting efficiency.",
+      "business_domain": "productivity/saas",
+      "target_market": "B2C - Solopreneurs, startup founders balancing jobs, small business owners.",
+      "unique_value_proposition": "Specifically addresses the time management and meeting fatigue challenges faced by busy founders, offering integrated tools for better control over their day and collaborations.",
+      "technical_feasibility": "Medium",
+      "internal_modules": [
+        "User Authentication & Authorization Module",
+        "User Data Management Module",
+        "Productivity & Meeting Module",
+        "Email & Notification Module"
+      ],
+      "implementation_cost": [
+        "Operation cost: ~0 THB/month or ~$0/month (using free tiers, potential ~$15/month for email service if high notification volume)"
+      ],
+      "risk_for_solopreneur": "Technical complexity of time/calendar logic and potential integrations. Requires effective marketing to reach busy founders.",
+      "source_url": "https://www.reddit.com/r/business/comments/1livuqa/i_cant_pay_attention_in_meetings/, https://www.reddit.com/r/startups/comments/1ljctx7/balancing_a_full_time_job_while_building_a/"
+    },
+    {
+      "name": "Bootstrap Finance Navigator",
+      "concept": "A web-based tool providing calculators for equity splits and sweat equity valuation, along with templates and guides for structuring fundraising asks and strategies for getting warm introductions.",
+      "business_domain": "fintech/saas",
+      "target_market": "B2C/B2B - Early-stage startup founders, bootstrapped small business owners seeking funding or structuring teams.",
+      "unique_value_proposition": "Simplifies complex early-stage financial decisions like equity and fundraising, offering clear tools and actionable guidance specifically for resource-constrained ventures.",
+      "technical_feasibility": "Medium",
+      "internal_modules": [
+        "User Authentication & Authorization Module",
+        "User Data Management Module",
+        "Financial Modeling & Equity Module",
+        "Content & Resource Module"
+      ],
+      "implementation_cost": [
+        "Operation cost: ~0 THB/month or ~$0/month (using free tiers of BaaS and hosting)"
+      ],
+      "risk_for_solopreneur": "Ensuring accuracy of financial calculations. Handling sensitive user financial data securely. Requires expertise in startup finance.",
+      "source_url": "https://www.reddit.com/r/startups/comments/1lixrfn/is_it_appropriate_to_ask_for_equity_when_joining/, https://www.reddit.com/r/startups/comments/1ljcakz/my_startup_is_strapped_for_cash_should_i_consider/, https://www.reddit.com/r/startups/comments/1lj0u62/tips_on_getting_warm_intros_while_fundraising_i/"
+    },
+    {
+      "name": "Lean Hiring Blueprint",
+      "concept": "An interactive guide and template library focused on helping startups and small businesses define their essential 'hiring stack' and build a simple, effective, and affordable hiring process.",
+      "business_domain": "saas/hrtech",
+      "target_market": "B2B - Early-stage startup founders, small business owners facing hiring challenges.",
+      "unique_value_proposition": "Provides a practical, step-by-step approach and curated tools for building a hiring process tailored to the limited resources and specific needs of startups.",
+      "technical_feasibility": "Simple to Medium",
+      "internal_modules": [
+        "User Authentication & Authorization Module",
+        "User Data Management Module",
+        "Hiring & Team Module",
+        "Content & Resource Module"
+      ],
+      "implementation_cost": [
+        "Operation cost: ~0 THB/month or ~$0/month (using free tiers of BaaS and hosting)"
+      ],
+      "risk_for_solopreneur": "Requires deep understanding of startup hiring processes. Content needs to be high quality and trustworthy. Marketing to a niche audience.",
+      "source_url": "https://www.reddit.com/r/startups/comments/1lit0o8/whats_your_hiring_stack_look_like_i_will_not/"
+    },
+    {
+      "name": "Automation Opportunity Finder",
+      "concept": "A resource hub and assessment tool to help business owners identify areas in their operations ripe for automation and discover relevant no-code/low-code tools or strategies.",
+      "business_domain": "productivity/saas",
+      "target_market": "B2B - Small business owners, solopreneurs looking to improve efficiency.",
+      "unique_value_proposition": "Guides non-technical founders through the process of identifying automation opportunities that yield fast payoffs, linking them to practical tools and methods.",
+      "technical_feasibility": "Simple",
+      "internal_modules": [
+        "Content & Resource Module",
+        "AI Insights Module",
+        "User Data Management Module"
+      ],
+      "implementation_cost": [
+        "Operation cost: ~0 THB/month or ~$0/month (using free tiers of hosting and potentially BaaS for saving tools)"
+      ],
+      "risk_for_solopreneur": "Content needs constant updating as automation tools evolve. Requires understanding of various business processes. Marketing to a broad small business audience.",
+      "source_url": "https://www.reddit.com/r/business/comments/1lipm7d/whats_one_thing_you_automated_in_your_business_that_paid_off_fast/"
+    }
+  ]
+}

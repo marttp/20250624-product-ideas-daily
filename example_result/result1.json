@@ -1,104 +1,104 @@
 {
-    "opportunities": [
-      {
-        "name": "IdeaSculpt",
-        "concept": "A structured tool for entrepreneurs to capture, organize, refine, and prioritize business ideas into actionable plans, using proven frameworks like the Lean Canvas.",
-        "business_domain": "Productivity",
-        "target_market": "B2C (Aspiring and early-stage entrepreneurs, solopreneurs)",
-        "unique_value_proposition": "Provides a focused, distraction-free environment specifically for business idea development, integrating proven frameworks to guide the process from concept to plan.",
-        "technical_feasibility": "Medium",
-        "internal_modules": [
-          "user_authentication_system",
-          "idea_data_model",
-          "canvas_visualization_module",
-          "note_taking_module",
-          "prioritization_scoring_system",
-          "reporting_export_module",
-          "user_settings_module"
-        ],
-        "implementation_cost": "Low initial operational cost leveraging serverless free tiers. Medium development investment (weeks to months) for core features.",
-        "risk_for_solopreneur": "Market adoption, differentiation from general project management tools, need for effective marketing to reach the target audience.",
-        "source_url": "https://www.reddit.com/r/startups/comments/1limfvb/how_do_you_all_consolidate_your_ideas_need_some_advice/"
-      },
-      {
-        "name": "ResumeShield",
-        "concept": "A web application that helps hiring managers and startup founders quickly screen job applications, with a focus on detecting potentially AI-generated content and highlighting key candidate qualifications.",
-        "business_domain": "SaaS/HR Tech",
-        "target_market": "B2B (Small businesses, startups, hiring managers)",
-        "unique_value_proposition": "Saves significant time in the hiring process by providing quick insights and flagging generic or AI-padded applications, specifically addressing the influx of AI resumes.",
-        "technical_feasibility": "Medium",
-        "internal_modules": [
-          "user_authentication_system",
-          "document_upload_parser",
-          "ai_detection_module",
-          "keyword_extraction_module",
-          "applicant_data_storage",
-          "screening_workflow_ui",
-          "api_integration_layer"
-        ],
-        "implementation_cost": "Low initial operational cost using serverless and potential AI API free tiers. Medium development investment.",
-        "risk_for_solopreneur": "Accuracy of AI detection models, need to handle various document formats reliably, legal compliance around screening processes.",
-        "source_url": "https://www.nytimes.com/2025/06/21/business/dealbook/ai-job-applications.html"
-      },
-      {
-        "name": "PitchPath",
-        "concept": "A simple CRM and resource platform tailored for startups managing their fundraising outreach, helping organize investor contacts, track conversations, and provide essential pitch deck/strategy templates.",
-        "business_domain": "SaaS/Fintech",
-        "target_market": "B2B (Startup founders seeking seed/early-stage funding)",
-        "unique_value_proposition": "A dedicated, simplified tool focused solely on the fundraising process, combining CRM capabilities with curated, actionable resources unlike general-purpose CRMs.",
-        "technical_feasibility": "Medium",
-        "internal_modules": [
-          "user_authentication_system",
-          "investor_crm_module",
-          "deal_tracking_module",
-          "document_template_storage",
-          "resource_library_module",
-          "email_integration_module",
-          "reporting_dashboard"
-        ],
-        "implementation_cost": "Low initial operational cost with serverless free tiers. Medium development investment.",
-        "risk_for_solopreneur": "Competition from existing CRM solutions, needing to constantly update fundraising resources, building trust with founders regarding advice.",
-        "source_url": "https://www.reddit.com/r/startups/comments/1lj0u62/tips_on_getting_warm_intros_while_fundraising_i_will_not_promote/"
-      },
-      {
-        "name": "AdWise Lite",
-        "concept": "A simplified dashboard for small businesses to pull key performance data from major ad platforms (Google/Meta), visualize spending vs. basic results, and get simple, non-technical tips to avoid common ad budget waste.",
-        "business_domain": "SaaS/Marketing Tech",
-        "target_market": "B2B (Small business owners, solo entrepreneurs running their own ads)",
-        "unique_value_proposition": "Makes ad performance reporting accessible and actionable for non-marketers, specifically designed to help SMBs stop wasting money on ineffective advertising.",
-        "technical_feasibility": "Medium",
-        "internal_modules": [
-          "user_authentication_system",
-          "ad_platform_api_integrations",
-          "data_storage_module",
-          "reporting_dashboard_ui",
-          "insight_generation_engine",
-          "user_onboarding_module",
-          "billing_subscription_module"
-        ],
-        "implementation_cost": "Low initial operational cost using serverless and API free tiers. Medium development investment.",
-        "risk_for_solopreneur": "Reliability and ongoing changes to ad platform APIs, complexity of providing universally useful insights, competition from more comprehensive ad tools.",
-        "source_url": "https://www.reddit.com/r/Entrepreneur/comments/1ljcq0n/why_80_of_smbs_torch_their_ad_budget_before/"
-      },
-      {
-        "name": "ConvertFlow Go",
-        "concept": "Provides solopreneurs and small businesses with easy-to-use templates, checklists, and basic analysis tools to improve website conversion rates without needing deep marketing expertise.",
-        "business_domain": "SaaS/Marketing Tech",
-        "target_market": "B2C/B2B (Solopreneurs, freelancers, small business owners with websites)",
-        "unique_value_proposition": "Offers practical, bite-sized conversion rate optimization tools and guidance specifically designed for users without deep marketing expertise or large budgets.",
-        "technical_feasibility": "Medium",
-        "internal_modules": [
-          "user_authentication_system",
-          "template_library",
-          "checklist_management",
-          "basic_analytics_tracking",
-          "landing_page_analyzer",
-          "a_b_test_helper",
-          "resource_content_management"
-        ],
-        "implementation_cost": "Low initial operational cost with serverless and storage free tiers. Medium development investment.",
-        "risk_for_solopreneur": "Effectiveness of general templates across diverse businesses, need to stay updated on CRO best practices, competing with more advanced analytics platforms.",
-        "source_url": "https://www.reddit.com/r/startups/comments/1lj8rof/case_study_doubled_conversion_2_to_4_overnight_by/"
-      }
-    ]
-  }
+  "opportunities": [
+    {
+      "name": "IdeaSculpt",
+      "concept": "A structured tool for entrepreneurs to capture, organize, refine, and prioritize business ideas into actionable plans, using proven frameworks like the Lean Canvas.",
+      "business_domain": "Productivity",
+      "target_market": "B2C (Aspiring and early-stage entrepreneurs, solopreneurs)",
+      "unique_value_proposition": "Provides a focused, distraction-free environment specifically for business idea development, integrating proven frameworks to guide the process from concept to plan.",
+      "technical_feasibility": "Medium",
+      "internal_modules": [
+        "user_authentication_system",
+        "idea_data_model",
+        "canvas_visualization_module",
+        "note_taking_module",
+        "prioritization_scoring_system",
+        "reporting_export_module",
+        "user_settings_module"
+      ],
+      "implementation_cost": "Low initial operational cost leveraging serverless free tiers. Medium development investment (weeks to months) for core features.",
+      "risk_for_solopreneur": "Market adoption, differentiation from general project management tools, need for effective marketing to reach the target audience.",
+      "source_url": "https://www.reddit.com/r/startups/comments/1limfvb/how_do_you_all_consolidate_your_ideas_need_some_advice/"
+    },
+    {
+      "name": "ResumeShield",
+      "concept": "A web application that helps hiring managers and startup founders quickly screen job applications, with a focus on detecting potentially AI-generated content and highlighting key candidate qualifications.",
+      "business_domain": "SaaS/HR Tech",
+      "target_market": "B2B (Small businesses, startups, hiring managers)",
+      "unique_value_proposition": "Saves significant time in the hiring process by providing quick insights and flagging generic or AI-padded applications, specifically addressing the influx of AI resumes.",
+      "technical_feasibility": "Medium",
+      "internal_modules": [
+        "user_authentication_system",
+        "document_upload_parser",
+        "ai_detection_module",
+        "keyword_extraction_module",
+        "applicant_data_storage",
+        "screening_workflow_ui",
+        "api_integration_layer"
+      ],
+      "implementation_cost": "Low initial operational cost using serverless and potential AI API free tiers. Medium development investment.",
+      "risk_for_solopreneur": "Accuracy of AI detection models, need to handle various document formats reliably, legal compliance around screening processes.",
+      "source_url": "https://www.nytimes.com/2025/06/21/business/dealbook/ai-job-applications.html"
+    },
+    {
+      "name": "PitchPath",
+      "concept": "A simple CRM and resource platform tailored for startups managing their fundraising outreach, helping organize investor contacts, track conversations, and provide essential pitch deck/strategy templates.",
+      "business_domain": "SaaS/Fintech",
+      "target_market": "B2B (Startup founders seeking seed/early-stage funding)",
+      "unique_value_proposition": "A dedicated, simplified tool focused solely on the fundraising process, combining CRM capabilities with curated, actionable resources unlike general-purpose CRMs.",
+      "technical_feasibility": "Medium",
+      "internal_modules": [
+        "user_authentication_system",
+        "investor_crm_module",
+        "deal_tracking_module",
+        "document_template_storage",
+        "resource_library_module",
+        "email_integration_module",
+        "reporting_dashboard"
+      ],
+      "implementation_cost": "Low initial operational cost with serverless free tiers. Medium development investment.",
+      "risk_for_solopreneur": "Competition from existing CRM solutions, needing to constantly update fundraising resources, building trust with founders regarding advice.",
+      "source_url": "https://www.reddit.com/r/startups/comments/1lj0u62/tips_on_getting_warm_intros_while_fundraising_i_will_not_promote/"
+    },
+    {
+      "name": "AdWise Lite",
+      "concept": "A simplified dashboard for small businesses to pull key performance data from major ad platforms (Google/Meta), visualize spending vs. basic results, and get simple, non-technical tips to avoid common ad budget waste.",
+      "business_domain": "SaaS/Marketing Tech",
+      "target_market": "B2B (Small business owners, solo entrepreneurs running their own ads)",
+      "unique_value_proposition": "Makes ad performance reporting accessible and actionable for non-marketers, specifically designed to help SMBs stop wasting money on ineffective advertising.",
+      "technical_feasibility": "Medium",
+      "internal_modules": [
+        "user_authentication_system",
+        "ad_platform_api_integrations",
+        "data_storage_module",
+        "reporting_dashboard_ui",
+        "insight_generation_engine",
+        "user_onboarding_module",
+        "billing_subscription_module"
+      ],
+      "implementation_cost": "Low initial operational cost using serverless and API free tiers. Medium development investment.",
+      "risk_for_solopreneur": "Reliability and ongoing changes to ad platform APIs, complexity of providing universally useful insights, competition from more comprehensive ad tools.",
+      "source_url": "https://www.reddit.com/r/Entrepreneur/comments/1ljcq0n/why_80_of_smbs_torch_their_ad_budget_before/"
+    },
+    {
+      "name": "ConvertFlow Go",
+      "concept": "Provides solopreneurs and small businesses with easy-to-use templates, checklists, and basic analysis tools to improve website conversion rates without needing deep marketing expertise.",
+      "business_domain": "SaaS/Marketing Tech",
+      "target_market": "B2C/B2B (Solopreneurs, freelancers, small business owners with websites)",
+      "unique_value_proposition": "Offers practical, bite-sized conversion rate optimization tools and guidance specifically designed for users without deep marketing expertise or large budgets.",
+      "technical_feasibility": "Medium",
+      "internal_modules": [
+        "user_authentication_system",
+        "template_library",
+        "checklist_management",
+        "basic_analytics_tracking",
+        "landing_page_analyzer",
+        "a_b_test_helper",
+        "resource_content_management"
+      ],
+      "implementation_cost": "Low initial operational cost with serverless and storage free tiers. Medium development investment.",
+      "risk_for_solopreneur": "Effectiveness of general templates across diverse businesses, need to stay updated on CRO best practices, competing with more advanced analytics platforms.",
+      "source_url": "https://www.reddit.com/r/startups/comments/1lj8rof/case_study_doubled_conversion_2_to_4_overnight_by/"
+    }
+  ]
+}

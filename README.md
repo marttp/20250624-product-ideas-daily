@@ -12,6 +12,14 @@ This tool uses AI agents to scan Reddit subreddits for yesterday's posts and ext
 - **AI-Powered Insights**: Uses Google's Gemini model to analyze trends
 - **Multi-Agent Architecture**: Orchestrated agents for specialized tasks
 
+## AI Agent Design
+
+![AI Agent Design](./images/AI%20Agent%20Design%20-%20Product%20Ideas%20Daily.jpg)
+
+## System Architecture
+
+![System Architecture](./images/System%20Architecture.jpg)
+
 ## Requirements
 
 - Python 3.12+

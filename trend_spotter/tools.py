@@ -3,6 +3,7 @@ import logging
 import os
 from datetime import datetime, timedelta
 from google.adk.tools.tool_context import ToolContext
+from google.cloud import firestore
 
 
 def search_yesterday_reddit_posts(
@@ -88,3 +89,26 @@ def append_to_state(
     tool_context.state[field] = existing_state + [response]
     logging.info(f"[Added to {field}] {response}")
     return {"status": "success"}
+
+
+def set_firestore_data(data: dict) -> dict[str, str]:
+    """Set data to Firestore collection 'product_ideas' with document ID as today's date.
+
+    Args:
+        data (dict): Dictionary containing the data to store in Firestore
+
+    Returns:
+        dict[str, str]: {"status": "success"} or {"status": "error", "message": "error details"}
+    """
+    try:
+        # Initialize Firestore client
+        db = firestore.Client()
+        # Set data to product_ideas collection with today's date as document ID
+        doc_ref = db.collection("product_ideas").document("today")
+        doc_ref.set(data)
+        logging.info(f"Successfully set data to Firestore: product_ideas/today")
+        return {"status": "success"}
+    except Exception as e:
+        error_msg = f"Error setting data to Firestore: {str(e)}"
+        logging.error(error_msg)
+        return {"status": "error", "message": error_msg}

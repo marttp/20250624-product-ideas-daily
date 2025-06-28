@@ -2,7 +2,7 @@ from google.adk.agents import Agent
 from trend_spotter.config import MODEL
 from google.adk.tools.agent_tool import AgentTool
 from trend_spotter.sub_agents.google_search_agent import google_search_agent
-from trend_spotter.tools import append_to_state
+from trend_spotter.tools import append_to_state, set_firestore_data
 from google.genai import types
 
 safety_settings = [
@@ -75,7 +75,7 @@ Create comprehensive technical specifications and store in shared state:
 
 **Technical Architecture:**
 - **Complexity Level**: [Simple/Medium/Complex]
-- **Internal Modules**: [List of 3-10 specific technical modules/components needed]
+- **Internal Modules**: [List of 3-5 specific technical modules/components needed]
 - **Technology Stack**: [Recommended tools/services]
 - **System Architecture**: [High-level technical design]
 
@@ -192,7 +192,7 @@ solution_architect_agent = Agent(
 reporter_agent_prompt = """
 **Role:**
 - You are a strategic business reporter who synthesizes market research and technical analysis into actionable product opportunities.
-- Your purpose is to review all shared state data and create the final formatted report with the top 5 most promising opportunities.
+- Your purpose is to review all shared state data and create the final formatted report with the top 6 most promising opportunities.
 
 **Context Access:**
 - You have access to shared state containing:
@@ -204,6 +204,9 @@ reporter_agent_prompt = """
 Review all shared state data and synthesize it into the exact JSON format requested by the orchestrator.
 Number must be state clearly in report even it's approximate.
 
+**MANDATORY STEP:**
+After generating the final JSON report, you MUST use set_firestore_data to store the results. This is a required step that cannot be skipped.
+
 **Analysis Process:**
 1. **Data Review:**
    - Access all three fields from shared state: reddit_research, product_requirements, technical_specifications
@@ -212,13 +215,17 @@ Number must be state clearly in report even it's approximate.
 
 2. **Opportunity Ranking:**
    - Prioritize based on: market demand (from Reddit), business viability (from PRD), technical feasibility (from architect)
-   - Select the TOP 5 most promising opportunities for solopreneurs
+   - Select the TOP 6 most promising opportunities for solopreneurs
    - Ensure each has clear customer benefit and reasonable implementation costs
 
 3. **Final Report Generation:**
    - Format findings in the exact JSON structure specified in the orchestrator prompt
    - Include all required fields: name, concept, business_domain, target_market, unique_value_proposition, technical_feasibility, internal_modules, implementation_cost, risk_for_solopreneur, source_url
-   - Ensure internal_modules contains 3-10 specific technical components
+   - Ensure internal_modules contains 3-5 specific technical components
+
+4. **MANDATORY Data Storage:**
+   - After creating the JSON report, you MUST use set_firestore_data to save the results
+   - This step is required and cannot be omitted
 
 **Output Format:**
 Return ONLY the JSON structure as specified in the orchestrator prompt:
@@ -255,7 +262,7 @@ Return ONLY the JSON structure as specified in the orchestrator prompt:
 ```
 
 **Requirements:**
-- Return exactly 5 opportunities in the "opportunities" array
+- Return exactly 6 opportunities in the "opportunities" array
 - Each opportunity must include all 10 fields shown above
 - Focus on highest potential benefit for solopreneur success
 - Base recommendations on the actual data from shared state
@@ -267,6 +274,6 @@ reporter_agent = Agent(
     name="reporter_agent",
     description="A business reporter who synthesizes shared state data into final JSON product opportunity reports.",
     instruction=reporter_agent_prompt,
-    tools=[append_to_state],
+    tools=[append_to_state, set_firestore_data],
 )
 

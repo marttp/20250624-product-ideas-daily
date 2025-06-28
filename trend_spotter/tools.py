@@ -104,9 +104,10 @@ def set_firestore_data(data: dict) -> dict[str, str]:
         # Initialize Firestore client
         db = firestore.Client()
         # Set data to product_ideas collection with today's date as document ID
-        doc_ref = db.collection("product_ideas").document("today")
+        today = datetime.now().strftime("%Y-%m-%d")
+        doc_ref = db.collection("product_ideas").document(today)
         doc_ref.set(data)
-        logging.info(f"Successfully set data to Firestore: product_ideas/today")
+        logging.info(f"Successfully set data to Firestore: product_ideas/{today}")
         return {"status": "success"}
     except Exception as e:
         error_msg = f"Error setting data to Firestore: {str(e)}"

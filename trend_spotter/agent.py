@@ -6,8 +6,6 @@ from trend_spotter.sub_agents.workshop_group import (
     solution_architect_agent,
     reporter_agent,
 )
-from google.adk.tools.agent_tool import AgentTool
-
 
 solution_design_group = SequentialAgent(
     name="solution_design_agent",

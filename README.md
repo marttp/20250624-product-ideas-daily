@@ -93,6 +93,16 @@ export REDDIT_USER_AGENT="SET_YOUR_REDDIT_USER_AGENT"
 
 ## Deploy to Google Cloud
 
+First, I have problem with `adk deploy`. So I use `gcloud run deploy` instead and they have alternative setup.
+
+For now, let's export `requirements.txt` for using with plain `pip` instead of `uv` to make it work.
+
+```bash
+uv export --no-emit-workspace --no-dev --no-annotate --no-header --no-hashes --output-file requirements.txt
+```
+
+Here is deployment command:
+
 ```bash
 gcloud run deploy product-ideas-daily \
 --source . \

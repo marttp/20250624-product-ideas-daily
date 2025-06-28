@@ -31,7 +31,7 @@ cp .env.example .env
 
 ## ENV Example
 ```properties
-GOOGLE_API_KEY=your_google_api_key
+GEMINI_API_KEY=your_gemini_api_key
 REDDIT_CLIENT_ID=your_reddit_client_id
 REDDIT_CLIENT_SECRET=your_reddit_client_secret
 REDDIT_USER_AGENT=your_reddit_user_agent
